@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Usadas só pela janela e pelo ícone; o restante das cores está em ui/tema/Cores.kt -->
     <color name="fundo">#FBF7F1</color>
-    <color name="texto">#2E2420</color>
-    <color name="texto_secundario">#6F625A</color>
-    <color name="linha">#E6DCCF</color>
     <color name="terracota">#A8482A</color>
-    <color name="terracota_claro">#F3DDD3</color>
-    <color name="dica_fundo">#FFF3D6</color>
-    <color name="dica_texto">#5C4614</color>
-    <color name="branco">#FFFFFF</color>
-
-    <color name="categoria_salgados">#66762F</color>
-    <color name="categoria_doces">#994A68</color>
-    <color name="categoria_bebidas">#3B6F85</color>
 </resources>

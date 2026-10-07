@@ -2,26 +2,47 @@
 <resources>
     <string name="app_name">Caderno de Receitas</string>
 
-    <string name="titulo_lista">Caderno de receitas</string>
+    <!-- Navegação -->
+    <string name="aba_caderno">Meu caderno</string>
+    <string name="aba_descobrir">Descobrir</string>
+    <string name="voltar">Voltar</string>
+    <string name="mais_opcoes">Mais opções</string>
+
+    <!-- Categorias e filtros -->
+    <string name="categoria_salgados">Salgados</string>
+    <string name="categoria_doces">Doces</string>
+    <string name="categoria_bebidas">Bebidas</string>
+    <string name="filtro_todas">Todas</string>
+    <string name="filtro_favoritas">Favoritas</string>
+
+    <!-- Caderno -->
+    <string name="titulo_caderno">Caderno de receitas</string>
     <plurals name="quantidade_receitas">
         <item quantity="one">%d receita guardada</item>
         <item quantity="other">%d receitas guardadas</item>
     </plurals>
+    <string name="nova_receita">Nova receita</string>
+    <string name="carregando_caderno">Abrindo o caderno…</string>
+    <string name="vazio_caderno_titulo">Seu caderno está vazio</string>
+    <string name="vazio_caderno_mensagem">Escreva sua primeira receita ou procure ideias na aba Descobrir.</string>
+    <string name="vazio_favoritas_titulo">Nenhuma favorita ainda</string>
+    <string name="vazio_favoritas_mensagem">Toque na estrela de uma receita para encontrá-la aqui mais rápido.</string>
+    <string name="vazio_categoria_titulo">Nada por aqui</string>
+    <string name="vazio_categoria_mensagem">Você ainda não tem receitas nesta categoria.</string>
+    <string name="erro_caderno">Não foi possível abrir o caderno.</string>
+    <string name="tentar_novamente">Tentar novamente</string>
 
-    <string name="filtro_todas">Todas</string>
-    <string name="filtro_favoritas">Favoritas</string>
-    <string name="categoria_salgados">Salgados</string>
-    <string name="categoria_doces">Doces</string>
-    <string name="categoria_bebidas">Bebidas</string>
+    <!-- Tema -->
+    <string name="tema">Aparência</string>
+    <string name="tema_sistema">Igual ao sistema</string>
+    <string name="tema_claro">Claro</string>
+    <string name="tema_escuro">Escuro</string>
 
-    <string name="vazio_favoritas">Nenhuma favorita ainda.\nToque na estrela de uma receita para guardá-la aqui.</string>
-    <string name="vazio_categoria">Nenhuma receita nesta categoria.</string>
-
+    <!-- Favoritas -->
     <string name="marcar_favorita">Marcar como favorita</string>
     <string name="desmarcar_favorita">Remover das favoritas</string>
-    <string name="favorita_adicionada">Adicionada às favoritas</string>
-    <string name="favorita_removida">Removida das favoritas</string>
 
+    <!-- Detalhe -->
     <string name="rende">Rende %s</string>
     <string name="ingredientes">Ingredientes</string>
     <string name="modo_preparo">Modo de preparo</string>
@@ -29,5 +50,66 @@
     <string name="a_gosto">a gosto</string>
     <string name="contador_ingredientes">%1$d de %2$d separados</string>
     <string name="ingredientes_completos">Tudo separado</string>
-    <string name="receita_nao_encontrada">Receita não encontrada.</string>
+    <string name="passo_numero">Passo %d</string>
+    <string name="receita_nao_encontrada">Esta receita não está mais no caderno.</string>
+    <string name="carregando_receita">Carregando receita…</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="compartilhar_com">Compartilhar receita</string>
+    <string name="excluir_titulo">Excluir receita?</string>
+    <string name="excluir_mensagem">\"%s\" será removida do seu caderno. Isso não pode ser desfeito.</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="importada_da_internet">Receita salva da TheMealDB.</string>
+    <string name="foto_da_receita">Foto de %s</string>
+
+    <!-- Formulário -->
+    <string name="editar_receita">Editar receita</string>
+    <string name="fechar">Fechar</string>
+    <string name="salvar">Salvar</string>
+    <string name="salvar_receita">Salvar receita</string>
+    <string name="campo_nome">Nome da receita</string>
+    <string name="campo_categoria">Categoria</string>
+    <string name="campo_tempo">Tempo (min)</string>
+    <string name="campo_rendimento">Rendimento</string>
+    <string name="campo_rendimento_exemplo">Ex.: 8 fatias</string>
+    <string name="campo_quantidade">Qtd.</string>
+    <string name="campo_ingrediente">Ingrediente</string>
+    <string name="adicionar_ingrediente">Adicionar ingrediente</string>
+    <string name="remover_ingrediente">Remover ingrediente %d</string>
+    <string name="campo_passos">Modo de preparo</string>
+    <string name="campo_passos_ajuda">Escreva um passo por linha.</string>
+    <string name="campo_dica">Dica (opcional)</string>
+    <string name="opcional">Opcional</string>
+    <string name="adicionar_foto">Adicionar foto</string>
+    <string name="trocar_foto">Trocar foto</string>
+    <string name="remover_foto">Remover foto</string>
+    <string name="erro_foto">Não foi possível usar esta imagem.</string>
+    <string name="erro_nome_obrigatorio">Dê um nome para a receita.</string>
+    <string name="erro_nome_longo">Use no máximo 80 caracteres.</string>
+    <string name="erro_tempo_invalido">Informe um tempo entre 1 e 1440 minutos.</string>
+    <string name="erro_ingredientes">Adicione pelo menos um ingrediente.</string>
+    <string name="erro_passos">Escreva pelo menos um passo.</string>
+    <string name="erro_corrigir_campos">Confira os campos destacados.</string>
+    <string name="erro_salvar">Não foi possível salvar. Tente de novo.</string>
+
+    <!-- Descobrir -->
+    <string name="titulo_descobrir">Descobrir</string>
+    <string name="buscar_receitas">Buscar receitas</string>
+    <string name="buscar_dica">Em inglês: cake, chicken, pasta…</string>
+    <string name="limpar_busca">Limpar busca</string>
+    <string name="aviso_ingles">Receitas da TheMealDB, com textos em inglês. Salve no caderno para editar e traduzir.</string>
+    <string name="sugestoes">Sugestões</string>
+    <string name="resultados_para">Resultados para \"%s\"</string>
+    <string name="buscando">Buscando receitas…</string>
+    <string name="vazio_busca_titulo">Nenhuma receita encontrada</string>
+    <string name="vazio_busca_mensagem">Tente outra palavra em inglês, como \"soup\" ou \"beef\".</string>
+    <string name="erro_sem_conexao">Sem conexão com a internet. Seu caderno continua disponível.</string>
+    <string name="erro_servidor">O serviço de receitas não respondeu. Tente daqui a pouco.</string>
+    <string name="salvar_no_caderno">Salvar no caderno</string>
+    <string name="salvando">Salvando…</string>
+    <string name="abrir_no_caderno">Abrir no meu caderno</string>
+    <string name="salva_no_caderno">Receita salva no seu caderno.</string>
+    <string name="aviso_texto_original">Texto original em inglês. Depois de salvar, você pode editar e traduzir.</string>
+    <string name="receita_indisponivel">Esta receita não está mais disponível.</string>
 </resources>

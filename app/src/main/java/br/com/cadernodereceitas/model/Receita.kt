@@ -1,14 +1,6 @@
 package br.com.cadernodereceitas.model
 
-import androidx.annotation.ColorRes
-import androidx.annotation.StringRes
-import br.com.cadernodereceitas.R
-
-enum class Categoria(@StringRes val titulo: Int, @ColorRes val cor: Int) {
-    SALGADOS(R.string.categoria_salgados, R.color.categoria_salgados),
-    DOCES(R.string.categoria_doces, R.color.categoria_doces),
-    BEBIDAS(R.string.categoria_bebidas, R.color.categoria_bebidas),
-}
+enum class Categoria { SALGADOS, DOCES, BEBIDAS }
 
 data class Ingrediente(
     val nome: String,
@@ -17,13 +9,38 @@ data class Ingrediente(
 )
 
 data class Receita(
-    val id: Int,
+    val id: Long = 0,
     val nome: String,
     val categoria: Categoria,
-    val tempoPreparoMin: Int,
+    // Receitas importadas da internet não informam o tempo
+    val tempoPreparoMin: Int?,
     val rendimento: String?,
     val ingredientes: List<Ingrediente>,
     val passos: List<String>,
     val dica: String? = null,
     val favorita: Boolean = false,
+    // Caminho de arquivo local (foto escolhida pelo usuário) ou URL (receita importada)
+    val foto: String? = null,
+    // id da receita na TheMealDB quando ela foi salva pela aba Descobrir
+    val idOrigem: String? = null,
+)
+
+/** Item da lista de resultados da aba Descobrir. */
+data class ReceitaDescoberta(
+    val id: String,
+    val nome: String,
+    val fotoUrl: String?,
+    val categoria: String?,
+    val origem: String?,
+)
+
+/** Receita completa vinda da TheMealDB, exibida antes de ser salva no caderno. */
+data class DetalheDescoberta(
+    val id: String,
+    val nome: String,
+    val fotoUrl: String?,
+    val categoria: String?,
+    val origem: String?,
+    val ingredientes: List<Ingrediente>,
+    val passos: List<String>,
 )

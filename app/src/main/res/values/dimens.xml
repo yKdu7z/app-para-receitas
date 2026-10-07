@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Divisor da lista começa alinhado ao texto, depois do quadrado com a inicial -->
-    <dimen name="recuo_divisor">80dp</dimen>
-</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CadernoDeReceitas" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/terracota</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorPrimaryContainer">@color/terracota_claro</item>
+        <item name="colorOnPrimaryContainer">@color/texto</item>
+        <item name="colorSecondaryContainer">@color/terracota_claro</item>
+        <item name="colorOnSecondaryContainer">@color/texto</item>
+        <item name="colorSurface">@color/fundo</item>
+        <item name="colorOnSurface">@color/texto</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+        <item name="colorOutline">@color/linha</item>
+        <item name="colorOutlineVariant">@color/linha</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <item name="android:windowBackground">@color/fundo</item>
+    </style>
+
+    <style name="TituloSecao">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <style name="ChipFiltro" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

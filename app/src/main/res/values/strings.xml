@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Caderno de Receitas</string>
+
+    <string name="titulo_lista">Caderno de receitas</string>
+    <plurals name="quantidade_receitas">
+        <item quantity="one">%d receita guardada</item>
+        <item quantity="other">%d receitas guardadas</item>
+    </plurals>
+
+    <string name="filtro_todas">Todas</string>
+    <string name="filtro_favoritas">Favoritas</string>
+    <string name="categoria_salgados">Salgados</string>
+    <string name="categoria_doces">Doces</string>
+    <string name="categoria_bebidas">Bebidas</string>
+
+    <string name="vazio_favoritas">Nenhuma favorita ainda.\nToque na estrela de uma receita para guardá-la aqui.</string>
+    <string name="vazio_categoria">Nenhuma receita nesta categoria.</string>
+
+    <string name="marcar_favorita">Marcar como favorita</string>
+    <string name="desmarcar_favorita">Remover das favoritas</string>
+    <string name="favorita_adicionada">Adicionada às favoritas</string>
+    <string name="favorita_removida">Removida das favoritas</string>
+
+    <string name="rende">Rende %s</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="modo_preparo">Modo de preparo</string>
+    <string name="dica">Dica</string>
+    <string name="a_gosto">a gosto</string>
+    <string name="contador_ingredientes">%1$d de %2$d separados</string>
+    <string name="ingredientes_completos">Tudo separado</string>
+    <string name="receita_nao_encontrada">Receita não encontrada.</string>
+</resources>
